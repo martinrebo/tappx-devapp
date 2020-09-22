@@ -1,0 +1,23 @@
+.btn {
+    font-family: Titillium Web, 'Helvetica', 'Arial', sans-serif;
+    border-radius: 6px;
+    padding-top: 0.46428571em;
+    padding-bottom: 0.46428571em;
+    padding-right: 2.78571429em;
+    padding-left: 2.78571429em;
+    border: 1px solid #1e282c;
+    border-width: 1px;
+    font-size: inherit;
+    line-height: 1.85714286em;
+}
+
+.btn--primary{
+    background: #ef003d;
+    border-color: #ef003d;
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn--primary:hover {
+    background: #ff0a48;
+}

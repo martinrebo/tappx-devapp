@@ -1,6 +1,10 @@
 # tappx
  Technical Test for :tappx - React  and UX/UI
 
+## Known Issues
+- In some cases Random User API respond with a empty ID field for the user. 
+
+
  # Frontend Test
 
 Hi, the main idea of this test is to develop a basic application using some specific

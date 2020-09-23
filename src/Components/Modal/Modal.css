@@ -1,0 +1,33 @@
+.modal {
+    width: 70%;
+    background-color: #282c34 ;
+    transition: 1.1s ease-out;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    border: 5px solid white;
+    overflow-x: scroll;
+
+}
+
+.modal input {
+    padding: 5px;
+    margin: 5px;
+}
+
+.modal-button {
+display: inline;
+}
+
+.modal-button button {
+    background-color: #282c34;
+
+}
+
+.submit-button {
+    padding: 10 20px;
+    text-align: center;
+    margin: 20px;
+    color: #282c34 ;
+}

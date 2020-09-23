@@ -9,6 +9,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-fetch-hook": "^1.8.3",
+    "react-hook-form": "^6.8.4",
     "react-scripts": "3.4.3"
   },
   "scripts": {

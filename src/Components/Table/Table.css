@@ -1,0 +1,8 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.column span{
+font-weight: 700;
+}

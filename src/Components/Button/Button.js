@@ -12,7 +12,13 @@ export default function Button() {
         fetch(URL_API)
             .then(res => res.json())
             // .then(data => console.log(data))
-        .then(data => dispatch({ type: "ADD_DEV", payload: data?.results[0] }))
+        .then(data => {
+            dispatch({ type: "ADD_DEV", payload: data?.results[0] })
+            localStorage.setItem("devs", data?.results)
+        }
+           
+           
+        )
     }
 
 console.log(globalState.state.devs)

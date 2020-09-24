@@ -15,6 +15,8 @@ const StateProvider = ({ children }) => {
         return { ...state, devs: action.payload };
       case 'ADD_DEV':
         return { ...state, devs: [...state.devs, action.payload] };
+      case 'EDIT_DEV':
+        return { ...state, devs: [...state.devs, action.payload] };
       case 'DELETE_DEV':
         return { ...state, devs: action.payload };
       default:

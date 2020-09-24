@@ -23,7 +23,7 @@ export default function Table({ devs }) {
                 {devs?.map((dev, index) => {
                     return (
                         <div key={index}>
-                            {dev.id.value}
+                            {index}
                         </div>
                     )
                 })}
@@ -76,7 +76,7 @@ export default function Table({ devs }) {
                             <Modal data={dev}  />
                             <button
                                 onClick={deleteDev} >
-                                <span data-devid={dev.id.value} role="img" aria-label="Delete"> ❌ </span>
+                                <span data-devid={index} role="img" aria-label="Delete"> ❌ </span>
                             </button>
                         </div>
                     )

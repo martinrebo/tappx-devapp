@@ -22,8 +22,8 @@ const Modal = ({ data }) => {
                 : <></>}
 
 
-            <span className="modal-button">
-                <span onClick={handleClick}> <span role="img" aria-label="edit"> ✏️</span>  </span>
+            <span className="btn-modal">
+                <span onClick={handleClick}> <span aria-label="edit"> Edit </span>  </span>
             </span>
         </>
     )

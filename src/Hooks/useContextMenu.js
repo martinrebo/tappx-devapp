@@ -14,9 +14,10 @@ const useContextMenu = outerRef => {
         setYPos(`${event.pageY}px`);
         showMenu(true);
         setDataId(event.target.dataset.id)
-        console.log(event.target)
+        
       } else {
         showMenu(false);
+        
       }
     },
     [showMenu, outerRef, setXPos, setYPos]
@@ -25,6 +26,7 @@ const useContextMenu = outerRef => {
   const handleClick = useCallback((e) => {
     
     showMenu(false);
+    
 
   }, [showMenu]);
 

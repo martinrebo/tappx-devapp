@@ -1,28 +1,63 @@
-.grid  {
+.grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     /* grid-template-rows: minmax(75px, 1fr); */
     /* grid-template-rows: repeat(5, 1fr); */
-    gap: 10px 5px;
+    gap: 5px 2px;
     background-color: #f7f7f7;
     /* grid-auto-rows: 1fr; */
-    border: 1px solid #ef003d ;
+    border: 1px solid #ef003d;
 }
 
-.grid > span {
-    padding: 10px;
-    font-size: 1.3em;
+.grid>span {
+    padding: 5px;
+    font-size: 0.8em;
     background-color: #fff;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .grid .title {
-    font-size: 25px;
-    font-weight: 700px;
+    font-size: 1em;
+    font-weight: bold;
     border-bottom: 1px solid #ef003d;
-
 }
 
-.buttons {
+.grid .buttons {
     text-align: right;
+    line-height: 2.5em;
+    display: inline;
+}
+
+.btn-delete {
+    padding: 5% 10%;
+    margin: 10px;
+    color: #fff;
+    border: 1px solid #1f383f;
+}
+
+.email {
+    word-break: break-all;
+}
+
+/* On screens that are 700px or more */
+
+@media screen and (min-width: 700px) {
+    .grid {
+        gap: 10px 5px;
+    }
+    .grid>span {
+        padding: 10px;
+        font-size: 1.3em;
+    }
+    .grid .title {
+        font-size: 1.5em;
+    }
+    .buttons {
+        font-size: 1.3em;
+    }
+    .email {
+        word-break: normal;
+    }
 }

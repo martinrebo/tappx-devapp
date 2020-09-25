@@ -9,7 +9,7 @@ import { store } from './store/store'
 
 function App() {
 
-  const URL = 'https://randomuser.me/api/?results=5&inc=id,name,location,email,cell&noinfo&seed=developers'
+  const URL = 'https://randomuser.me/api/?results=50&inc=id,name,location,email,cell&noinfo&seed=developers'
 
   const globalState = useContext(store);
   const { dispatch } = globalState;
@@ -28,11 +28,15 @@ function App() {
       <div className="App-header">
         <Header />
       </div>
+
       <div className="App-main">
+        <div style={{textAlign: "center", margin: "20px 0px"}}>
+          <Button />
+        </div>
+        <div>
+          <Table devs={globalState.state.devs} />
+        </div>
 
-
-        <Button />
-        <Table devs={globalState.state.devs} />
 
       </div>
     </div>

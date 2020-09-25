@@ -7,12 +7,12 @@ const Menu = ({ outerRef }) => {
 
     const handleClick = (e) => {
         e.preventDefault()
-        console.log("Context Menu Test ID:", dataId)
+        console.log("Developer ID:", dataId)
     }
     if (menu) {
         return (
             <ul className="menu" style={{ top: yPos, left: xPos }}>
-                <li onClick={handleClick}> TEST Console ID: {dataId}  </li>
+                <li onClick={handleClick}> Developer ID: {dataId}  </li>
             </ul>
         );
     }

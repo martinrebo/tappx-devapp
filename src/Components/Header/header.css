@@ -1,9 +1,22 @@
+.header {
+    text-align: center;
+}
 .title {
 color: #333333
 }
-.header {
-    border: 1px solid #ef003d;
-}
+
 .logo {
     max-height: 50px;
+}
+
+.header input {
+    padding: 6px;
+    font-size: 1.2em;
+    margin: 10px 0px;
+}
+.header button {
+    padding: 6px;
+    font-size: 1em;
+    margin: 10px 0px;
+    background-color: #1f383f;
 }

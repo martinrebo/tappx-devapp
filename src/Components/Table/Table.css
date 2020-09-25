@@ -1,9 +1,28 @@
-.grid {
+.grid  {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+    /* grid-template-rows: minmax(75px, 1fr); */
+    /* grid-template-rows: repeat(5, 1fr); */
+    gap: 10px 5px;
+    background-color: #f7f7f7;
+    /* grid-auto-rows: 1fr; */
+    border: 1px solid #ef003d ;
 }
 
-.column span{
-font-weight: 700;
+.grid > span {
+    padding: 10px;
+    font-size: 1.3em;
+    background-color: #fff;
+
+}
+
+.grid .title {
+    font-size: 25px;
+    font-weight: 700px;
+    border-bottom: 1px solid #ef003d;
+
+}
+
+.buttons {
+    text-align: right;
 }

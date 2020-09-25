@@ -22,9 +22,9 @@ const Modal = ({ data }) => {
                 : <></>}
 
 
-            <div className="modal-button">
-                <button onClick={handleClick}> <span role="img" aria-label="edit"> ✏️</span>  </button>
-            </div>
+            <span className="modal-button">
+                <span onClick={handleClick}> <span role="img" aria-label="edit"> ✏️</span>  </span>
+            </span>
         </>
     )
 }

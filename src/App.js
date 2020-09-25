@@ -1,4 +1,4 @@
-import React, {useEffect, useContext } from 'react';
+import React, { useEffect, useContext } from 'react';
 import './App.css';
 
 import Header from './Components/Header/Header'
@@ -17,17 +17,24 @@ function App() {
 
   useEffect(() => {
     fetch(URL).then(res => res.json())
-    .then(data => 
-      dispatch({type: 'GET_ALL_DEVS', payload: data.results}))
+      .then(data =>
+        dispatch({ type: 'GET_ALL_DEVS', payload: data.results }))
 
   }, [])
 
 
   return (
     <div className="App">
-      <Header />
-      <Button />
-      <Table devs={globalState.state.devs} />
+      <div className="App-header">
+        <Header />
+      </div>
+      <div className="App-main">
+
+
+        <Button />
+        <Table devs={globalState.state.devs} />
+
+      </div>
     </div>
   );
 }

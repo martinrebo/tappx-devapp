@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useForm, Control, Select } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { store } from '../../store/store'
 
 export default function Form({ data }) {

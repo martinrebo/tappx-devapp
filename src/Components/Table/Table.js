@@ -18,70 +18,47 @@ export default function Table({ devs }) {
     }
     return (
         <div className="grid">
-            <div className="column">
-                <span>ID</span>
-                {devs?.map((dev, index) => {
-                    return (
-                        <div key={index}>
+
+            <span className="title">ID</span>
+            <span className="title">Name</span>
+            <span className="title">City</span>
+            <span className="title">Cell</span>
+            <span className="title">Email</span>
+            <span className="title">Edit/Delete</span>
+
+            {devs?.map((dev, index) => {
+                return (
+                    <>
+
+                        <span key={index}>
                             {index}
-                        </div>
-                    )
-                })}
-            </div>
-            <div className="column">
-                <span>Name</span>
-                {devs?.map((dev, index) => {
-                    return (
-                        <div key={index}>
+                        </span>
+                        <span key={index}>
                             {dev.name.title} {dev.name.first} {dev.name.last}
-                        </div>
-                    )
-                })}
-            </div>
-            <div className="column">
-                <span>City</span>
-                {devs?.map((dev, index) => {
-                    return (
-                        <div key={index}>
+                        </span>
+                        <span key={index}>
                             {dev.location.city}
-                        </div>
-                    )
-                })}
-            </div>
-            <div className="column">
-                <span>Cell</span>
-                {devs?.map((dev, index) => {
-                    return (
-                        <div key={index}>
+                        </span>
+                        <span key={index}>
                             {dev.cell}
-                        </div>
-                    )
-                })}
-            </div>
-            <div className="column">
-                <span>Email</span>
-                {devs?.map((dev, index) => {
-                    return (
-                        <div key={index}>
+                        </span>
+                        <span key={index}>
                             {dev.email}
-                        </div>
-                    )
-                })}
-            </div>
-            <div className="column">
-                <span>Edit/Delete</span>
-                {devs?.map((dev, index) => {
-                    return (
-                        <div key={index}>
-                            <Modal data={dev}  />
-                            <button
+                        </span>
+                        <span className="buttons" key={index}>
+
+                            <Modal data={dev} />
+                            <span
                                 onClick={deleteDev} >
                                 <span data-devid={index} role="img" aria-label="Delete"> ❌ </span>
-                            </button>
-                        </div>
-                    )
-                })}
-            </div>
+                            </span>
+
+
+                        </span>
+                    </>
+                )
+            })}
+
         </div>
     )
 }

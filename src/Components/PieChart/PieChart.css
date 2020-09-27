@@ -1,0 +1,77 @@
+.grid-piechart {
+  width: 100%;
+  min-height: 30vh;
+    margin: auto;
+}
+
+.chart {
+  /* Added programatically by component /* 
+  /* background: 
+    conic-gradient(     
+      #5DA5DA 0 40%,
+      #4D4D4D 0 50%,
+      #B276B2 0
+    ); */
+  border-radius: 50%;
+  width: 50%;
+  padding-top: 50%;
+  float: left;
+  padding-right: 50px;
+}
+
+.key {
+  width: 50%;
+  float: right;
+  list-style: none;
+  display: table;
+  border-collapse: separate;
+  padding-left: 5%;
+
+}
+
+.key > li {
+  display: table-row;
+}
+
+.key > li > * {
+  display: table-cell;
+  border-bottom: 12px solid white;
+}
+
+.percent {
+  color: white;
+  padding: 10px 2px;
+  text-shadow: 0 0 1px black;
+  text-align: center;
+}
+.choice {
+  padding-left: 10px;
+}
+
+.gray {
+  background: #4D4D4D;
+}
+.blue {
+  background: #5DA5DA;
+}
+
+.purple {
+  background: #B276B2;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+@media screen and (min-width: 700px) {
+  .grid-piechart {
+    width: 30vw;
+    /* height: 30vh; */
+  }
+}

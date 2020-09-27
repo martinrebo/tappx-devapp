@@ -3,7 +3,7 @@ import { store } from '../../store/store'
 import './Button.css'
 
 export default function Button() {
-    const URL_API = ' https://randomuser.me/api/?inc=id,name,location,email,cell&noinfo'
+    const URL_API = ' https://randomuser.me/api/?inc=id,name,gender,location,email,cell&noinfo'
 
     const globalState = useContext(store);
     const { dispatch } = globalState;
@@ -20,11 +20,13 @@ export default function Button() {
            
         )
     }
-
-console.log(globalState.state.devs)
     return (
-        <button onClick={handleClick} className="btn btn--primary">
+<div style={{textAlign: "center", margin: "5% 0%"}}>
+<button onClick={handleClick} className="btn btn--primary">
             New Developer
         </button>
+</div>
+
+
     )
 }

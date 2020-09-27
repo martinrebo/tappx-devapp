@@ -1,8 +1,12 @@
+*, h1, h2, h3, h4, h5, h6, p, ul, a {
+  margin: 0;
+  padding: 0;
+}
 .App {
   font-family: Titillium Web, 'Helvetica', 'Arial', sans-serif;
   display: grid;
   grid-template-columns: 3px 1fr 3px;
-  background: #ffffff;
+  background: #ffffff;;
 }
 
 .App-header {
@@ -12,6 +16,11 @@
 .App-main {
   grid-column: 2/3;
 }
+
+.debug {
+  border: 1px solid red;
+}
+
 
 /* On screens that are 700px or more */
 @media screen and (min-width: 700px) {

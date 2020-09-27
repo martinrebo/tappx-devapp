@@ -1,13 +1,10 @@
 import React, { useContext, useState, useEffect } from 'react'
-import { store } from '../../store/store'
 // import styles from './PieChart.css'
 import './PieChart.css'
 
 
 export default function PieChart({ devs }) {
 
-  const globalState = useContext(store);
-  // const { dispatch } = globalState;
 
   const [gender, setGender] = useState({ males: 0, females: 0 })
 

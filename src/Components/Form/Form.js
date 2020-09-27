@@ -61,10 +61,10 @@ export default function Form({ data }) {
                 <option value="Game">Game</option>
                 <option value="Social">Social</option>
             </select>
-
+            <label>Active</label>
             <input type="checkbox" name="active" value="yes" ref={register} />
 
-            <input type="submit" />
+            <input className="btn-submit" type="submit" />
         </form>
     );
 }

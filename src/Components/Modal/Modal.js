@@ -13,9 +13,8 @@ const Modal = ({ data }) => {
             {toogle ?
 
                 <div className="modal">
-                    <button onClick={handleClick}> <span role="img" aria-label="close">❌</span> </button>
-                    <p> Add new ROW </p>
-<Form data={data} />
+                    <button onClick={handleClick} className="btn-close"> <span role="img" aria-label="close">❌</span> </button>
+                    <Form data={data} />
 
                 </div>
 

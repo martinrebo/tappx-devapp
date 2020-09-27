@@ -2,7 +2,20 @@
  Technical Test for :tappx - React  and UX/UI
 
 ## Known Issues
-- In some cases Random User API respond with a empty ID field for the user. 
+- In some cases Random User API respond with a empty ID field for the user.  
+- Unit Tests: I didn't have enough time to develop a testing strategy. (No coverage, no confidence) 
+
+## TECH
+- Create React App for boiler plate React code
+- Custom Hook for Right Context Menu
+- CSS: CSS Modules + Inline Styles + CSS grid + Flexbox
+- Context Hook for Global State and dispatch actions
+- Unit Tests: Jest + React Testing Library (smoke tests)
+
+## EXTRA - SPECS
+- *Right Context Menu*: Right click on the table to see a context menu with a dummy console log functionality
+- *Piechart Component*: Using CSS + HTML + Polyfill shows the % of developers by gender. 
+
 
 
  # Frontend Test

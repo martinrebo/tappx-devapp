@@ -1,5 +1,9 @@
 # tappx
- Technical Test for :tappx - React  and UX/UI
+ - Technical Test for :tappx - React  and UX/UI
+- Repo: https://github.com/martinrebo/tappx-devapp
+- Hosting: https://tappx-devapp.ey.r.appspot.com/
+
+
 
 ## Known Issues
 - In some cases Random User API respond with a empty ID field for the user.  
